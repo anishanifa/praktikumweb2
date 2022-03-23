@@ -19,7 +19,9 @@
                 if (isset($_POST['konversi'])) {
                     $nilai = $_POST['nilai'];
 
-                    if ($nilai == '0') {
+                    if ($nilai < '0') {
+                        echo "<h2>Anda Menginput Kurang Dari Limit Bilangan</h2>";
+                    } else if ($nilai == '0') {
                         echo "<h2>Hasil : Nol</h2>";
                     } else if ($nilai <= '9') {
                         echo "<h2>Hasil : Satuan</h2>";
