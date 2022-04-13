@@ -16,7 +16,11 @@
                 $teks = $_POST['teks'];
                 $array = str_split($teks);
                 $banyak = count($array);
-                
+
+                echo "<h3>Input :</h3>";
+                echo "$teks<br>";
+                echo "<h3>Output :</h3>";
+
                 foreach ($array as $key => $value) {
                     for ($x = 0; $x < $banyak; $x++) {
                         if ($x == 0) {
