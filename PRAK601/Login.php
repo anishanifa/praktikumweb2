@@ -18,14 +18,14 @@
         $sql = koneksi() -> prepare("SELECT * FROM member WHERE nomor_member = :nomor_member");
         $sql -> bindParam('nomor_member', $nomor_member, PDO::PARAM_STR);
         $sql -> execute();
-        $hasil = $sql->fetch();
-        if ($hasil) {
-            if ($password == $hasil["password"]) 
+        $output = $sql -> fetch();
+        if ($output) {
+            if ($password == $output["password"]) 
             {
-                $_SESSION["nomor_member"] = $hasil['nomor_member'];
+                $_SESSION["nomor_member"] = $output['nomor_member'];
                 header("Location: Indeks.php");
             } else {
-            echo "Nomor member atau Password yang anda masukkan salah";
+            echo "</br>Nomor member atau Password yang anda masukkan salah";
             echo "</br>Silahkan <a href='FormLogin.php'>login</a> kembali";
             }
         }
