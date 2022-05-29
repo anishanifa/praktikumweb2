@@ -10,6 +10,7 @@
         </style>
     <body>
     <?php
+        echo </br>";
         echo "Anda tidak memiliki akses ke halaman ini!";
         echo "</br>Silahkan <a href= 'FormLogin.php'>Login</a> untuk mengakses halaman";
     ?>
