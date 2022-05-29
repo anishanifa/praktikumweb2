@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Form Login</title>
+        <title>Error Page</title>
     </head>
     <style>
             body {
